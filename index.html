@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Educacion: Ninos con TDAH</title>
+<style>
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #8AF6F8;
+  }
+  header {
+   background-color: #012323 ;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+  }
+  nav {
+   background-color: #8AF6F8;
+   color: #fff;
+   padding: 10px;
+   text-align: left;
+  }
+  article {
+   background-color: #8AF6F8;
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+  section {
+   background-color: #8AF6F8;
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+  aside {
+   background-color: #8AF6F8;
+   color: #fff;
+   padding: 10px;
+   text-align: left;
+  }
+  footer {
+   background-color: ##070705;
+   color: ##070705;
+   padding: 10px;
+   text-align: center;
+ </style>
+ <script>
+        // Función para procesar el formulario de guardar datos
+        function guardarDatos() {
+            // Obtener los valores de los campos del formulario
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var ciudad = document.getElementById("ciudad").value;
+            var pais = document.getElementById("pais").value;
+
+            // Aquí puedes realizar acciones adicionales, como enviar los datos a un servidor o mostrarlos en la página
+        }
+
+        // Función para procesar el formulario de búsqueda en Google
+        function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            // Redirigir a la página de búsqueda de Google
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+<header>
+	<h1>Educación: Niños con TDAH</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="TDAH.html">¿Que es TDAH?</a></li>
+		<li><a href="Detectar.html">¿Como detectarlo?</a></li>
+		<li><a href="Estadisticas.html">Estadisticas a nivel global</a></li>
+		<li><a href="Causas.html">Causas del TDAH</a></li>
+		<li><a href="Prepararse.html">¿Como las escuelas deberian prepararse?</a></li>
+	</ul>
+</nav>
+<p>El Trastorno por Déficit de Atención e Hiperactividad (TDAH) es un trastorno neurobiológico del desarrollo que afecta a niños y,<br /> con frecuencia, persiste en la adolescencia y la edad adulta. Algunas características comunes del TDAH incluyen dificultades<br /> para prestar atención,impulsividad y actividad motora excesiva.</p>
+
+<img src="Index_/oki.jpg" style="width:300px;height:300px">
+
+
+<img src="Index_/ra.jpg" style="width:300px;height:300px">
+<section>
+<div class= "form-container">
+<h2>Guardar Datos</h2>
+<form>
+<label for="nombre">Nombre:</label> 
+<input type="text" id="nombre" name="nombre"><br>
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido" name="apellido"><br>
+<label for="ciudad">Ciudad:</label>
+<input type="text" id="ciudad" name="ciudad"><br>
+<label for="pais">Pais:</label>
+<input type="text" id="pais" name="pais"><br>
+<input type="submit" value="Guardar">
+</form>
+</div>
+</section>
+<aside>
+  <h3>Buscar en Google</h3>
+        <form onsubmit="buscarGoogle(); return false;">
+            <input type="text" id="busqueda" placeholder="Buscar en Google">
+            <input type="submit" value="Buscar">
+        </form>
+        <h3>Video de YouTube</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/NdK-32wREkE?si=vq9hNRhM4EjZ3tE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</aside>
+<footer>
+&copy; 2023 Niños con TDAH 
+</footer>
+</body>
+</html>
+
